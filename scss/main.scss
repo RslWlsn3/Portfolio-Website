@@ -68,12 +68,19 @@ main {
     a {
       padding: 0.6rem;
 
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
+      //   &:hover {
+      //     color: $secondary-color;
+      //     @include easeOut();
+      //   }
+    }
+
+    .fab:hover {
+      transform: scale(1.12);
+      color: $secondary-color;
+      @include easeOut();
     }
   }
+
   &#home {
     overflow: hidden; //never have a scroll bar
     h1 {
