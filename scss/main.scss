@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 * {
   box-sizing: border-box; //size stays the same no matter what padding and border are
@@ -28,7 +29,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    max-width: 520px;
+    //max-width: 515px;
     background: rgba(lighten($primary-color, 2), 0.85);
   }
 }
