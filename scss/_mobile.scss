@@ -3,6 +3,7 @@
   main#home h1 {
     margin-top: 10vh;
     font-weight: 400;
+    //font-size: 3.5rem;
   }
 }
 
@@ -16,6 +17,11 @@
   .lg-heading {
     line-height: 0.9;
     margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  main#home h1 {
+    font-size: 5rem;
   }
 
   .menu-nav,
@@ -33,6 +39,7 @@
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
+    background: rgba(darken($primary-color, 5), 0.95);
   }
 
   .menu-branding {
@@ -45,13 +52,27 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+
+    grid-template-columns: 1fr;
+    .bio-image {
+      content:url("../img/portrait3.png");    
+    }
+  }
 }
 
 //Tablets
 @include mediaLg {
   .sm-heading {
     max-width: 515px;
-  }
+  }  
 }
 
 //Smartphones
