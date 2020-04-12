@@ -186,7 +186,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px);
+  min-height: calc( 100vh - 60px );
 }
 main .icons {
   margin: 1rem;
@@ -235,6 +235,41 @@ main#home h1 {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #336dff 5px solid;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.projects img {
+  width: 100%;
+}
+.projects img:hover {
+  opacity: 0.5;
+  transition: all 0.5s ease-out;
+}
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.btn:hover, .btn-light:hover, .btn-dark:hover {
+  background: #336dff;
+  color: #000;
+  transition: all 0.5s ease-out;
+}
+
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333;
 }
 
 #main-footer {

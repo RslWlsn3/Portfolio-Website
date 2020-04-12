@@ -59,7 +59,9 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); //This allows the footer to stay at the bottom (footer is 60px)
+  min-height: calc(
+    100vh - 60px
+  ); //This allows the footer to stay at the bottom (footer is 60px)
 
   .icons {
     margin: 1rem;
@@ -126,6 +128,47 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+// Work/Porjects
+.projects {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+  img {
+    width: 100%; //sets width to 100% of container
+
+    &:hover {
+      opacity: 0.5;
+      @include easeOut;
+    }
+  }
+}
+
+//Button Styles
+.btn {
+  display: block; //on their own line & go all the way accross
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeOut;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
 }
 
 #main-footer {

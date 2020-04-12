@@ -5,6 +5,9 @@
     font-weight: 400;
     //font-size: 3.5rem;
   }
+  // .projects {
+  //   grid-template-columns: 1fr;
+  // }
 }
 
 //Desktops & Laptops
@@ -63,16 +66,22 @@
 
     grid-template-columns: 1fr;
     .bio-image {
-      content:url("../img/portrait3.png");    
+      content: url('../img/portrait3.png');
     }
   }
+  // .projects {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
 }
 
 //Tablets
 @include mediaLg {
   .sm-heading {
     max-width: 515px;
-  }  
+  }
+  // .projects {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
 }
 
 //Smartphones
@@ -80,4 +89,8 @@
   .sm-heading {
     max-width: 515px;
   }
+
+  // .projects {
+  //   grid-template-columns: repeat(4, 1fr);
+  // }
 }
